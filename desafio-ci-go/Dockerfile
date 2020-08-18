@@ -11,6 +11,6 @@ RUN pwd
 FROM scratch
 WORKDIR /go/src/app
 
-COPY --from=builder /go/src/app .
+COPY --from=builder /go/src/app/main .
 
 CMD ["./main"]
