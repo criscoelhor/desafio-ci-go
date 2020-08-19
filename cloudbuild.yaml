@@ -12,4 +12,4 @@ steps:
 - id: 'go_test'
   name: "gcr.io/cloud-builders/go"
   args: ["test","main"]
-
+  env: ["GOPATH=$PWD"]
